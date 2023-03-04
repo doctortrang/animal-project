@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Từ điển Sách Đỏ Việt Nam</title>
+    <link rel="icon" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/scripts/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Fira+Sans&family=Oleo+Script&family=Raleway&family=Righteous&family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">
+                        <img class="menu-button" src="/images/icons/menu-hamburger-svgrepo-com.svg" alt="hamburger">
+                    </a>
+                </li>
+                <li>
+                    <a href="/index/index.html">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="" id="animal">Động vật Sách đỏ</a>
+                </li>
+                <li>
+                    <a href="">Thực vật Sách đỏ</a>
+                </li>
+                <li>
+                    <a href="">Blogs</a>
+                </li>
+                <li>
+                    <img src="/images/icons/heart.png" alt="support">
+                    <a href="/index/support.html">Ủng hộ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside id="side-drawer">
+        <div>
+            <p><strong>Phân loại theo Mức độ Nguy cấp</strong></p>
+            <div class="classify">
+                <ul>
+                    <li><a href="/index/ex.html">Tuyệt chủng - EX</a></li>
+                    <li><a href="/index/ew.html">Tuyệt chủng ngoài thiên nhiên - EW</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/index/cr.html">Cực kỳ nguy cấp - CR</a></li>
+                    <li><a href="">Nguy cấp - EN</a></li>
+                    <li><a href="">Sẽ nguy cấp - VU</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Phụ thuộc bảo tồn - CD</a></li>
+                    <li><a href="">Sắp bị đe dọa - NT</a></li>
+                    <li><a href="">Ít lo ngại - LC</a></li>
+                </ul> 
+                <ul>
+                    <li><a href="">Thiếu dẫn liệu - DD</a></li>
+                    <li><a href="">Không đánh giá - NE</a></li>
+                </ul>
+            </div>
+            <p><strong>Phân loại theo Loài</strong></p>
+            <div class="classify">
+                <ul>
+                    <li><a href="">Thú ăn thịt</a></li>
+                    <li><a href="">Thú ăn thực vật</a></li>
+                    <li><a href="">Chim</a></li>
+                    <li><a href="">Gặm nhấm</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Lưỡng cư</a></li>
+                    <li><a href="">Bò sát</a></li>
+                    <li><a href="">Cá</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Giáp xác</a></li>
+                    <li><a href="">Chân khớp</a></li>
+                </ul>
+            </div>    
+        </div>     
+    </aside>
+    <main>
+        <!--Top Images Slideshow-->
+        <div class="slideshow-container">
+            <div class="mySlide fade">
+                <div class="number-text">
+                    <p>1/5</p>
+                </div>
+                <img src="/images/animals/Indochinese_leopard.jpg" alt="baogam">
+                <div class="caption">
+                    <p>Báo Hoa Mai Đông Dương</p>
+                </div>
+            </div>
+            <div class="mySlide fade">
+                <div class="number-text">
+                    <p>2/5</p>
+                </div>
+                <img src="/images/animals/saola.jpg" alt="saola">
+                <div class="caption">
+                    <p>Saola</p>
+                </div>
+            </div>
+            <div class="mySlide fade">
+                <div class="number-text">
+                    <p>3/5</p>
+                </div>
+                <img src="/images/animals/voocngusac.jpg" alt="vooc">
+                <div class="caption">
+                    <p>Voọc Ngũ Sắc</p>
+                </div>
+            </div>
+            <div class="mySlide fade">
+                <div class="number-text">
+                    <p>4/5</p>
+                </div>
+                <img src="/images/animals/huousao.jpg" alt="huousao">
+                <div class="caption">
+                    <p>Hươu Sao</p>
+                </div>
+            </div>
+            <div class="mySlide fade">
+                <div class="number-text">
+                    <p>5/5</p>
+                </div>
+                <img src="/images/animals/tegiacmotsung.jpg" alt="tegiac">
+                <div class="caption">
+                    <p>Tê Giác Một Sừng</p>
+                </div>
+            </div>
+
+            <!--Next and previous button-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- The dots/circles -->
+        <div id="dot-space">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        <!--About Me-->
+        <div id="intro">
+            <img src="/images/animals/JAN_animal_05.jpg" alt="intro-img">
+            <div class="intro-content">
+                <h2>Giới thiệu</h2>
+                <p>
+                    Một dự án cá nhân mình thực hiện nhằm phổ biến kiến thức về động thực vật quý hiếm cần được bảo tồn trong Sách đỏ Việt Nam.
+                    Qua đây mình mong mọi người sẽ nâng cao nhận thức và góp phần bảo vệ, gìn giữ những gì vốn có của thiên nhiên để đảm bảo cân bằng hệ sinh thái cũng như sự đa dạng sinh vật.
+                </p>
+            </div>
+        </div>
+        <div class="types">
+            <h2>Danh Mục</h2>
+            <div >
+                <ul>
+                    <li>
+                        <a href="/index/ex.html">
+                            <img src="/images/animals/tegiac.jpg" alt="tegiac">
+                            <div class="types-content">
+                                <h3>Tuyệt chủng</h3>
+                                <p>Một loài được coi là tuyệt chủng khi cá thể cuối cùng của loài đã chết.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/index/ew.html">
+                            <img src="/images/animals/huousao.jpg" alt="huousao">
+                            <div class="types-content">
+                                <h3>Tuyệt chủng ngoài thiên nhiên</h3>
+                                <p>Một loài được coi là tuyệt chủng ngoài thiên nhiên khi chỉ còn thấy trong điều kiện gây trồng, nuôi nhốt...</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/index/cr.html">
+                            <img src="/images/animals/voocmuihech.jpg" alt="voocmuihech">
+                            <div class="types-content">
+                                <h3>Cực kỳ nguy cấp</h3>
+                                <p>Một loài được coi là cực kỳ nguy cấp khi đứng trước nguy cơ tuyệt chủng ngoài thiên nhiên trong tương lai trước mắt.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/index/en.html">
+                            <img src="/images/animals/camon.jpg" alt="camon">
+                            <div class="types-content">
+                                <h3>Nguy cấp</h3>
+                                <p>Chưa phải là rất nguy cấp nhưng đang đứng trước một nguy cơ rất lớn sẽ bị tuyệt chủng ngoài thiên nhiên trong một tương lai gần.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="/images/animals/hacdautrag.jpg" alt="hacdautrang">
+                            <div class="types-content">
+                                <h3>Sẽ nguy cấp</h3>
+                                <p>Chưa phải nguy cấp và rất nguy cấp nhưng đứng trước nguy cơ tuyệt chủng ngoài thiên nhiên trong tương lai tương đối gần.</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

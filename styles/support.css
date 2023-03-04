@@ -1,0 +1,30 @@
+#side-drawer {
+    background-color: rgba(245, 244, 244, 0.8);
+}
+main {
+    margin: 0 auto;
+    font-family: 'Calligraffitti';
+    text-align: center;
+}
+main img {
+    width: 20rem;
+}
+#support {
+    width: 50%;
+    font-family: 'Fira Sans';
+    text-align: justify;
+    margin: 3rem auto;
+}
+#support img {
+    width: 2rem;
+}
+#support ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#support ul li {
+    padding: 0.5rem;
+}

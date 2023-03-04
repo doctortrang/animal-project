@@ -1,0 +1,76 @@
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlide");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+
+let autoslideIndex = 0;
+autoshowSlides();
+
+function autoshowSlides() {
+    let i;
+    let autoslides = document.getElementsByClassName("mySlide");
+    for (i = 0; i < autoslides.length; i++) {
+        autoslides[i].style.display = "none";
+    }
+    autoslideIndex++;
+    if (autoslideIndex > autoslides.length) {autoslideIndex = 1}
+    autoslides[autoslideIndex-1].style.display = "block";
+    setTimeout(autoshowSlides, 5000); // Change image every 5 seconds
+} 
+
+let autodotsIndex = 0;
+autoshowDots();
+
+function autoshowDots() {
+    let i;
+    let autodots = document.getElementsByClassName("dot");
+    for (i = 0; i < autodots.length; i++) {
+        autodots[i].className = autodots[i].className.replace(" active", "");
+    }
+    autodotsIndex++;
+    if (autodotsIndex > autodots.length) {
+        autodotsIndex = 1;
+    }
+    autodots[autodotsIndex-1].className += " active";
+    setTimeout(autoshowDots, 5000)
+}
+
+let accessAnimalSection = document.getElementById("animal")
+let accessSideDrawer = document.getElementById("side-drawer")
+
+
+accessAnimalSection.addEventListener('mousemove', displaySideBar)
+accessSideDrawer.addEventListener('mouseleave', undodisplaySideBar)
+//console.log(accessAnimalSection)
+function displaySideBar() {
+    let event = document.getElementById("side-drawer")
+    event.style.display = "block"
+}
+function undodisplaySideBar() {
+    let event = document.getElementById("side-drawer")
+    event.style.display = "none"
+}

@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+header {
+    width: 100%;
+    position: relative;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+nav {
+    width: 100%;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+nav ul {
+    margin: 0;
+    padding: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+    display: flex;
+    padding: 1.2rem 3rem;
+}
+nav ul li a {
+    color: rgb(56, 50, 50);
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: black;
+}
+nav ul li img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-right: 0.5rem;
+}
+.menu-button {
+    width: 2.5rem;
+    height: auto;
+}

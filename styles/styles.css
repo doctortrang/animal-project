@@ -1,0 +1,202 @@
+main {
+    width: 100%;
+}
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    font-family: 'Raleway';
+    font-weight: bolder;
+}
+.mySlide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    align-items: center;
+}
+.mySlide {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.caption {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+.number-text {
+    color: rgb(238, 235, 235);
+    font-size: 1.5rem;
+    position: absolute;
+    padding-left: 2rem;
+    top: 0;
+    display: none;
+}
+#dot-space {
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(219, 217, 217);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: rgb(117, 117, 117);
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#intro {
+    margin: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#intro img {
+    width: 20rem;
+    height: auto;
+    border-radius: 10px;
+}
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fira Sans';
+    font-size: 1.25rem;
+    width: 40%;
+    text-align: justify;
+}
+.types {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+    font-family: 'Fira Sans';
+}
+.types h2 {
+    font-size: 2rem;
+    font-family: 'Fira Sans';
+    text-transform: uppercase;
+}
+.types li a {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    overflow: hidden;
+}
+.types img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+.types ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.types li {
+    margin: 3rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.25s ease-out 0.08s;
+    overflow: hidden;
+    text-align: justify;
+}
+.types li:hover {
+    transform: scale(1.05);
+}
+.types-content {
+    padding: 1rem;
+}
+.menu-button {
+    width: 2.5rem;
+    height: auto;
+}
+#side-drawer {
+    left: 6rem;
+    height: 50vh;
+    width: 80%;
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(241, 241, 241, 0.8);
+    font-family: 'Raleway';
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    display: none;
+}
+#side-drawer p {
+    padding-left: 2rem;
+    text-transform: uppercase;
+}
+#side-drawer p:hover {
+    text-decoration: underline;
+}
+.classify {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+}
+.classify ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    left: 6rem;
+    position: relative;
+    width: 80%;
+}
+.classify ul li {
+    margin: 0;
+    padding: 0.2rem;
+}
+.classify a {
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+}
+.classify a:hover {
+    text-decoration: underline;
+}
+
+
