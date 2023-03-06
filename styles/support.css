@@ -1,6 +1,9 @@
 #side-drawer {
     background-color: rgba(245, 244, 244, 0.8);
 }
+.menu-button {
+    width: 2rem;
+}
 main {
     margin: 0 auto;
     font-family: 'Calligraffitti';

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Từ điển Sách Đỏ Việt Nam</title>
+    <title>Thư viện Sách Đỏ Việt Nam</title>
     <link rel="icon" sizes="32x32" href="/images/icons/favicon-32x32.png">
     <link rel="stylesheet" href="/styles/shared.css">
     <link rel="stylesheet" href="/styles/styles.css">
@@ -18,29 +18,52 @@
         <nav>
             <ul>
                 <li>
-                    <a href="">
+                    <a id="menu-btn" href="">
                         <img class="menu-button" src="/images/icons/menu-hamburger-svgrepo-com.svg" alt="hamburger">
                     </a>
                 </li>
                 <li>
-                    <a href="/index/index.html">Trang chủ</a>
+                    <a id="main-page" href="/index/index.html">Trang chủ</a>
                 </li>
                 <li>
                     <a href="" id="animal">Động vật Sách đỏ</a>
                 </li>
                 <li>
-                    <a href="">Thực vật Sách đỏ</a>
+                    <a id="plants" href="">Thực vật Sách đỏ</a>
                 </li>
                 <li>
-                    <a href="">Blogs</a>
+                    <a id="blogs" href="">Blogs</a>
                 </li>
                 <li>
                     <img src="/images/icons/heart.png" alt="support">
-                    <a href="/index/support.html">Ủng hộ</a>
+                    <a id="support" href="/index/support.html">Ủng hộ</a>
                 </li>
             </ul>
         </nav>
     </header>
+    <aside id="side-bar">
+        <p><strong>Phân loại theo Mức độ Nguy cấp</strong></p>
+        <div class="standard">
+            <ul>
+                <li><a href="/index/ex.html">Tuyệt chủng - EX</a></li>
+                <li><a href="/index/ew.html">Tuyệt chủng ngoài thiên nhiên - EW</a></li>
+            </ul>
+            <ul>
+                <li><a href="/index/cr.html">Cực kỳ nguy cấp - CR</a></li>
+                <li><a href="/index/en.html">Nguy cấp - EN</a></li>
+                <li><a href="/index/vu.html">Sẽ nguy cấp - VU</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Phụ thuộc bảo tồn - CD</a></li>
+                <li><a href="">Sắp bị đe dọa - NT</a></li>
+                <li><a href="">Ít lo ngại - LC</a></li>
+            </ul> 
+            <ul>
+                <li><a href="">Thiếu dẫn liệu - DD</a></li>
+                <li><a href="">Không đánh giá - NE</a></li>
+            </ul>
+        </div>     
+    </aside>
     <aside id="side-drawer">
         <div>
             <p><strong>Phân loại theo Mức độ Nguy cấp</strong></p>
@@ -51,8 +74,8 @@
                 </ul>
                 <ul>
                     <li><a href="/index/cr.html">Cực kỳ nguy cấp - CR</a></li>
-                    <li><a href="">Nguy cấp - EN</a></li>
-                    <li><a href="">Sẽ nguy cấp - VU</a></li>
+                    <li><a href="/index/en.html">Nguy cấp - EN</a></li>
+                    <li><a href="/index/vu.html">Sẽ nguy cấp - VU</a></li>
                 </ul>
                 <ul>
                     <li><a href="">Phụ thuộc bảo tồn - CD</a></li>
@@ -197,7 +220,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="/index/vu.html">
                             <img src="/images/animals/hacdautrag.jpg" alt="hacdautrang">
                             <div class="types-content">
                                 <h3>Sẽ nguy cấp</h3>
@@ -209,6 +232,29 @@
                 <div>
 
                 </div>
+            </div>
+        </div>
+        <div class="news">
+            <h2>Blogs</h2>
+            <div >
+                <ul>
+                    <li>
+                        <a href="https://kienthuc.net.vn/khoa-hoc/kham-pha-loai-chim-mi-nui-ba-dac-huu-nhat-viet-nam-1155077.html">
+                            <img src="/images/animals/minuiba.jpg" alt="minuiba">
+                            <div class="news-content">
+                                <h3>Khám phá loài chim Mi Núi Bà đặc hữu nhất Việt Nam</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://kienthuc.net.vn/khoa-hoc-cong-nghe/cac-loai-meo-hoang-da-hiem-co-cua-viet-nam-bao-hoa-mai-1794050.html">
+                            <img src="/images/animals/baohoamai.jpg" alt="baohoamai">
+                            <div class="news-content">
+                                <h3>Báo Hoa Mai có nguy cơ tuyệt chủng</h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
