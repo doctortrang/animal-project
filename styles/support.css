@@ -12,22 +12,22 @@ main {
 main img {
     width: 20rem;
 }
-#support {
+.support {
     width: 50%;
     font-family: 'Fira Sans';
     text-align: justify;
     margin: 3rem auto;
 }
-#support img {
+.support img {
     width: 2rem;
 }
-#support ul {
+.support ul {
     margin: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-#support ul li {
+.support ul li {
     padding: 0.5rem;
 }
