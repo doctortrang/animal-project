@@ -149,6 +149,9 @@ main {
 .types-content {
     padding: 1rem;
 }
+.li-menu-button{
+    position: relative;
+}
 .menu-button {
     width: 2.5rem;
     height: auto;
@@ -210,6 +213,15 @@ main {
     font-weight: bold;
     border-radius: 10px;
     display: none;
+    left: 0;
+    top: 115px;
+}
+#side-bar ul {
+    display: block;
+}
+#side-bar ul li {
+    display: block;
+    padding: 0;
 }
 #side-bar p {
     text-transform: uppercase;
