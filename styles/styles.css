@@ -113,6 +113,7 @@ main {
     font-size: 2rem;
     font-family: 'Fira Sans';
     text-transform: uppercase;
+    padding: 0.5rem;
 }
 .types li a {
     text-decoration: none;
@@ -176,6 +177,26 @@ main {
 #side-drawer p:hover {
     text-decoration: underline;
 }
+#plant-side-drawer {
+    left: 12rem;
+    height: 25vh;
+    width: 80%;
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(241, 241, 241, 0.8);
+    font-family: 'Raleway';
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    display: none;
+}
+#plant-side-drawer p {
+    padding-left: 2rem;
+    text-transform: uppercase;
+}
+#plant-side-drawer p:hover {
+    text-decoration: underline;
+}
 .classify {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -213,15 +234,6 @@ main {
     font-weight: bold;
     border-radius: 10px;
     display: none;
-    left: 0;
-    top: 115px;
-}
-#side-bar ul {
-    display: block;
-}
-#side-bar ul li {
-    display: block;
-    padding: 0;
 }
 #side-bar p {
     text-transform: uppercase;
@@ -253,6 +265,7 @@ main {
     font-size: 2rem;
     font-family: 'Fira Sans';
     text-transform: uppercase;
+    padding: 0.5rem;
 }
 .news img {
     width: 10rem;
@@ -293,6 +306,16 @@ main {
 .news-content {
     padding: 1.25rem;
 }
-
+.break {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#break-line {
+    width: 20rem;
+    height: 1px;
+    background-color: black;
+}
 
 

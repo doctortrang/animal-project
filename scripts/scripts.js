@@ -71,6 +71,8 @@ function displaySideDrawer() {
     event.style.display = "block"
     let event1 = document.getElementById("side-bar")
     event1.style.display = "none"
+    let event2 = document.getElementById("plant-side-drawer")
+    event2.style.display = "none"
 }
 function undodisplaySideDrawer() {
     let event = document.getElementById("side-drawer")
@@ -88,19 +90,39 @@ function displaySideBar() {
     event.style.display = "block"
     let event1 = document.getElementById("side-drawer")
     event1.style.display = "none"
+    let event2 = document.getElementById("plant-side-drawer")
+    event2.style.display = "none"
 }
 
 function undodisplaySideBar() {
     let event = document.getElementById("side-bar")
     event.style.display = "none"
 }
+
+let accessPlantSection = document.getElementById("plants")
+let accessPlantSideDrawer = document.getElementById("plant-side-drawer")
+
+accessPlantSection.addEventListener('mousemove', displayPlantSideDrawer)
+accessPlantSideDrawer.addEventListener('mouseleave', undodisplayPlantSideDrawer)
+
+function displayPlantSideDrawer() {
+    let event = document.getElementById("plant-side-drawer")
+    event.style.display = "block"
+    let event1 = document.getElementById("side-bar")
+    event1.style.display = "none"
+    let event2 = document.getElementById("side-drawer")
+    event2.style.display = "none"
+}
+function undodisplayPlantSideDrawer() {
+    let event = document.getElementById("plant-side-drawer")
+    event.style.display = "none"
+}
+
 let accessMainPage = document.getElementById("main-page")
-let accessPlants = document.getElementById("plants")
 let accessBlogs = document.getElementById("blogs")
 let accessSupport = document.getElementById("support")
 
 accessMainPage.addEventListener('mousemove', nodisplayIrrelevant)
-accessPlants.addEventListener('mousemove', nodisplayIrrelevant)
 accessBlogs.addEventListener('mousemove', nodisplayIrrelevant)
 accessSupport.addEventListener('mousemove', nodisplayIrrelevant)
 
@@ -109,4 +131,6 @@ function nodisplayIrrelevant() {
     event.style.display = "none"
     let event1 = document.getElementById("side-drawer")
     event1.style.display = "none"
+    let event2 = document.getElementById("plant-side-drawer")
+    event2.style.display = "none"
 }
