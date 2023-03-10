@@ -111,7 +111,7 @@ main {
 }
 .types h2 {
     font-size: 2rem;
-    font-family: 'Fira Sans';
+    font-family: 'Raleway';
     text-transform: uppercase;
     padding: 0.5rem;
 }
@@ -223,9 +223,9 @@ main {
     text-decoration: underline;
 }
 #side-bar {
-    width: 30%;
+    width: 20%;
     margin-left: 6rem;
-    padding: 2rem;
+    padding: 1.5rem;
     position: absolute;
     z-index: 999;
     background-color: rgba(241, 241, 241, 0.8);
@@ -242,10 +242,10 @@ main {
     text-decoration: underline;
 }
 .standard {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
-.standard ul {
-    list-style: none;
+.standard li {
+    padding: 0.5rem;
 }
 .standard a {
     color: black;
@@ -263,9 +263,16 @@ main {
 }
 .news h2 {
     font-size: 2rem;
-    font-family: 'Fira Sans';
+    font-family: 'Raleway';
     text-transform: uppercase;
     padding: 0.5rem;
+}
+.news-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
 }
 .news img {
     width: 10rem;
@@ -278,7 +285,6 @@ main {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 .news h3 {
     font-size: 1rem;
@@ -313,9 +319,22 @@ main {
     align-items: center;
 }
 #break-line {
-    width: 20rem;
+    width: 8rem;
     height: 1px;
     background-color: black;
 }
+.more {
+    margin-left: 1rem;
+    padding: 1rem;
+}
+.more a {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-size: 2rem;
+}
+.more a:hover {
+    color: rgb(0, 0, 0);
+}
+
 
 

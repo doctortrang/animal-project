@@ -9,7 +9,7 @@ main {
 .highlight-news {
     margin-top: 3rem;
     width: 60%;
-    left: 3rem;
+    left: 5rem;
     position: relative;
     font-family: 'Fira Sans';
     font-weight: 700;
@@ -49,18 +49,27 @@ main {
     text-decoration: none;
     color: black;
 }
+.side-news h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: rgb(62, 97, 150);
+    font-family: 'Raleway';
+    text-align: center;
+    padding-bottom: 1rem;
+}
 .side-content {
     width: 20rem;
     display: flex;
     flex-direction: row;
     margin-bottom: 2rem;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border: 0.5px solid rgb(158, 197, 255);
     border-radius: 6px;
     overflow: hidden;
     transition: transform 0.2s ease-out 0.05s;
 }
 .side-content:hover {
     transform: scale(1.04);
+    box-shadow: 2px 2px 2px 1px rgba(158, 197, 255, 0.2);
 }
 .side-content img {
     width: 6rem;
